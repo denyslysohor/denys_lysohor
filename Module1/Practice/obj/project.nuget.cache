@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "O8/VnqqpGZB/0VMc41sE5T4YXeGdeCVKyLdjmM2djrBikTNM4nz+WbDGL0VSx3smNABs1sfOIWJcfKXvWNKQ1A==",
+  "success": true,
+  "projectFilePath": "/Users/denyslysohor/Projects/Practice/Practice/Practice.csproj",
+  "expectedPackageFiles": [
+    "/Users/denyslysohor/.nuget/packages/stylecop.analyzers/1.1.118/stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
