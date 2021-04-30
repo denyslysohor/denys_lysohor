@@ -1,6 +1,0 @@
-/Users/denyslysohor/Projects/MyLogger/MyLogger/bin/Debug/MyLogger.exe
-/Users/denyslysohor/Projects/MyLogger/MyLogger/bin/Debug/MyLogger.pdb
-/Users/denyslysohor/Projects/MyLogger/MyLogger/obj/Debug/MyLogger.csprojAssemblyReference.cache
-/Users/denyslysohor/Projects/MyLogger/MyLogger/obj/Debug/MyLogger.csproj.CoreCompileInputs.cache
-/Users/denyslysohor/Projects/MyLogger/MyLogger/obj/Debug/MyLogger.exe
-/Users/denyslysohor/Projects/MyLogger/MyLogger/obj/Debug/MyLogger.pdb
