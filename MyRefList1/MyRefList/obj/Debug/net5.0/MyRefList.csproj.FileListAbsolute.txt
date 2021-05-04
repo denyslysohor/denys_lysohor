@@ -1,0 +1,15 @@
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.csprojAssemblyReference.cache
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.GeneratedMSBuildEditorConfig.editorconfig
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.AssemblyInfoInputs.cache
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.AssemblyInfo.cs
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.csproj.CoreCompileInputs.cache
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/MyRefList.deps.json
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/MyRefList.runtimeconfig.json
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/MyRefList.runtimeconfig.dev.json
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/MyRefList.dll
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/ref/MyRefList.dll
+/Users/denyslysohor/Projects/MyRefList/MyRefList/bin/Debug/net5.0/MyRefList.pdb
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.dll
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/ref/MyRefList.dll
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.pdb
+/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/Debug/net5.0/MyRefList.genruntimeconfig.cache

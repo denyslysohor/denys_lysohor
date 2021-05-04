@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/denyslysohor/Projects/MyRefList/RefList/RefList.csproj": {}
+  },
+  "projects": {
+    "/Users/denyslysohor/Projects/MyRefList/MyRefList/MyRefList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/denyslysohor/Projects/MyRefList/MyRefList/MyRefList.csproj",
+        "projectName": "MyRefList",
+        "projectPath": "/Users/denyslysohor/Projects/MyRefList/MyRefList/MyRefList.csproj",
+        "packagesPath": "/Users/denyslysohor/.nuget/packages/",
+        "outputPath": "/Users/denyslysohor/Projects/MyRefList/MyRefList/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/denyslysohor/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/denyslysohor/Projects/MyRefList/RefList/RefList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/denyslysohor/Projects/MyRefList/RefList/RefList.csproj",
+        "projectName": "RefList",
+        "projectPath": "/Users/denyslysohor/Projects/MyRefList/RefList/RefList.csproj",
+        "packagesPath": "/Users/denyslysohor/.nuget/packages/",
+        "outputPath": "/Users/denyslysohor/Projects/MyRefList/RefList/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/denyslysohor/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/denyslysohor/Projects/MyRefList/MyRefList/MyRefList.csproj": {
+                "projectPath": "/Users/denyslysohor/Projects/MyRefList/MyRefList/MyRefList.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
