@@ -116,10 +116,5 @@ namespace MyRefList
                 temp = temp.next;
             }
         }
-
-        void IRefList.DeleteByIndex(int index, Node current)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
