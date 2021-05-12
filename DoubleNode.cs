@@ -3,7 +3,7 @@ namespace MyRefList
 {
     internal class DoubleNode : Node
     {
-        public Node prev;
+        internal Node prev;
 
         public DoubleNode(int vl, Node nxt, Node prv) : base(vl, nxt)
         {
@@ -15,7 +15,6 @@ namespace MyRefList
             prev = null;
         }
  
-
         public DoubleNode(Node node) : base(node.value,node.next)
         {
             prev = null;
