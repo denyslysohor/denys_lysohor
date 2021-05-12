@@ -10,7 +10,7 @@ namespace RefList
         internal void DeleteByIndex(int index, Node current);
         void IndexOf(int value);
         int this[int index] { get; set; }
-        //private int Count{ get; set; }
+        private int Count{ get; set; }
 
     }
 }
