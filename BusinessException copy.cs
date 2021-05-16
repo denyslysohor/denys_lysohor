@@ -8,7 +8,7 @@ namespace MyLogger
     {
         public void BException()
         {
-            //throw new Exception("Skipped logic in Method: Warning");
+            throw new Exception("Skipped logic in Method: Warning");
         }
     }
 }
