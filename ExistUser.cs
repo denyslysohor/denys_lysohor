@@ -1,16 +1,13 @@
-﻿using System;
+using System;
 
 namespace RegistrationForm
 {
     [RequiredField]
     public class ExistUser : User
     {
+        [RequiredField]
         public string Firstname { get; set; }
+        [RequiredField]
         public int Age { get; set; }
-        public ExistUser(string login, string firstname, int age): base(login)
-        {
-            Firstname = firstname;
-            Age = age;
-        }
     }
 }
