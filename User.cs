@@ -1,15 +1,10 @@
-﻿using System;
+using System;
 
 namespace RegistrationForm
 {
-    [RequiredField]
     public abstract class User
     {
+        [RequiredField]
         public string Login { get; set; }
-
-        public User(string login)
-        {
-            Login = login;
-        }
     }
 }
