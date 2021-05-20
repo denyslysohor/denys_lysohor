@@ -1,28 +1,45 @@
-﻿using System;
+using System;
+using System.Reflection;
 
 namespace RegistrationForm
 {
     public class UserService
     {
         User[] users = new User[30];
-        ExistUser lena = new ExistUser("lmao1", "Olena", 95);
-        ExistUser denys = new ExistUser("denza500", "Denys", 27);
-        ExistUser julia = new ExistUser("Jull", "Julia", 28);
-        ExistUser dmitrii = new ExistUser("dimaxyi", "Dmitrii", 96);
 
         bool isConsist = false;
 
         public UserService()
         {
-            users[0] = lena;
-            users[1] = denys;
-            users[2] = julia;
-            users[3] = dmitrii;
+
+        }
+        private static void Validate(User user)
+        {
+            var type = user.GetType();
+            var properties = type.GetProperties();
+            foreach (var property in properties)
+            {
+                if (property.IsDefined(typeof(RequiredFieldAttribute)))
+                {
+                    if (property.GetValue(user) == null)
+                    {
+                        try
+                        {
+                            throw new Exception("Пользователь не прошел валидацию");
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Заполнены не все поля");
+                            break;
+                        }
+                    }
+                }
+            }
         }
 
         public void Register(User user)
         {
-
+            Validate(user);
             foreach (User item in users)
             {
                 if (item != null && user.Login == item.Login)
