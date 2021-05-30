@@ -57,6 +57,7 @@ namespace Hashtable
                 }
 
                 var item = bucket;
+                
                 while (item != null)
                 {
                     if (item.Value.CompareTo(value) == 0)
@@ -73,13 +74,32 @@ namespace Hashtable
 
         public T Find(K key)
         {
-            throw new NotImplementedException();
+            int index = Hash(key);
+            var bucket = _buckets[index];
+            
+            if (item.Equals(null))
+            {
+                return 0;
+            }
+            
+            while (item != null)
+            {
+                if (item.Key.CompareTo(bucket.Key) == 0)
+                {
+                    return item.Value;
+                }
+                
+                item = item.Next;
+            }
+            
+            return -1;
         }
 
         public void Add(K key, T value)
         {
             int index = Hash(key);
             var bucket = _buckets[index];
+            
             while (bucket != null)
             {
                 if (key.CompareTo(bucket.Key) == 0)
@@ -109,6 +129,7 @@ namespace Hashtable
             int index = Hash(key);
             var bucket = _buckets[index];
             HashNode<K, T> last = null;
+            
             while (bucket != null)
             {
                 if (bucket.Key.CompareTo(key) == 0)
