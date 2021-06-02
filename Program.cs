@@ -1,57 +1,65 @@
 ﻿using System;
 
-namespace Supervisor
+namespace Consumer_Producer
 {
-    public class Subject
-    {
-        public event EventHandler eventHandler;
-        public void Notify()
+    public class CustomEventArgs : EventArgs
         {
-            if (eventHandler != null)
+            public string Message { get; set; }
+            public CustomEventArgs(string message)
             {
-                eventHandler(this, EventArgs.Empty);
+                Message = message;
             }
         }
-    }
 
-    public class Observer
-    {
-        Subject subject;
+        class Publisher
+        {
+            public event EventHandler<CustomEventArgs> RaiseCustomEvent;
 
-        public Observer(Subject subject)
-        {
-            this.subject = subject;
-        }
-        public void EventTriggering(object sender, EventArgs ev)
-        {
-            Console.WriteLine("Событие затронуто");
+            public void InvokeEvent()
+            {
+                RaiseEvent(new CustomEventArgs("Событие сбылось"));
+            }
+
+            public void RaiseEvent(CustomEventArgs ev)
+            {
+                EventHandler<CustomEventArgs> raiseEvent = RaiseCustomEvent;
+
+                if (raiseEvent != null)
+                {
+                    ev.Message += $" {DateTime.UtcNow}";
+
+                    raiseEvent(this, ev);
+                }
+            }
         }
 
-        public void Subscribing()
+        class Subscriber
         {
-            subject.eventHandler += EventTriggering;
-        }
+            private string _id { get; }
 
-        public void UnSubscribing()
-        {
-            subject.eventHandler -= EventTriggering;
+            public Subscriber(string id, Publisher publisher)
+            {
+                _id = id;
+
+                publisher.RaiseCustomEvent += HandleEvent;
+            }
+
+            void HandleEvent(object sender, CustomEventArgs ev)
+            {
+                Console.WriteLine($"{_id} получил сообщение: {ev.Message}");
+            }
         }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            Subject sbj = new Subject();
-            Observer observer = new Observer(sbj);
+            Publisher publisher = new Publisher();
 
-            observer.Subscribing();
-            observer.Subscribing();
+            Subscriber subscriber = new Subscriber("Читатель", publisher);
+            Subscriber subscriber1 = new Subscriber("Читатель1", publisher);
+            Subscriber subscriber2 = new Subscriber("Читатель2", publisher);
 
-            sbj.Notify();
-
-            observer.UnSubscribing();
-
-            sbj.Notify();
+            publisher.InvokeEvent();
         }
     }
 }
