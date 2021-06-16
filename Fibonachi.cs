@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,7 +10,6 @@ namespace FiboMethod
         {
             if (cancellationToken.IsCancellationRequested)
             {
-                Console.WriteLine("Cancelled");
                 throw new Exception($"Operation canceled by {cancellationToken}");
             }
             if (num == 0 || num == 1)
@@ -23,13 +22,13 @@ namespace FiboMethod
             }
         }
 
-        private static async Task FibonachiAsync(CancellationToken cancellationToken)
+        private static async Task FibonachiAsync(CancellationToken cancellationToken, int num1)
         {
             if (cancellationToken.IsCancellationRequested)
                 return;
             try
             {
-                int fibo = await Task.Run(() => Fibonachi(95, cancellationToken));
+                int fibo = await Task.Run(() => Fibonachi(num1, cancellationToken));
                 Console.WriteLine($"Result: {fibo}");
             }
             catch (Exception ex)
@@ -40,8 +39,9 @@ namespace FiboMethod
 
         static async Task Main(string[] args)
         {
+            int num1 = 5;
             CancellationTokenSource cts = new();
-            Task fiboTask = FibonachiAsync(cts.Token);
+            Task fiboTask = FibonachiAsync(cts.Token, num1);
             Thread.Sleep(10000);
             cts.Cancel();
             Console.WriteLine("Stopped");
