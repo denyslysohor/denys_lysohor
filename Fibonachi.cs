@@ -10,7 +10,7 @@ namespace FiboMethod
         {
             if (cancellationToken.IsCancellationRequested)
             {
-                //Console.WriteLine("Cancelled");
+                Console.WriteLine("Cancelled");
                 throw new Exception($"Operation canceled by {cancellationToken}");
             }
             if (num == 0 || num == 1)
