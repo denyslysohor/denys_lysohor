@@ -1,0 +1,4 @@
+1;Igor;Male;18;
+2;Egor;Male;21;
+3;Egor;Male;23;
+
