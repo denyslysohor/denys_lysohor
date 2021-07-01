@@ -7,6 +7,6 @@ namespace ShopInfoEF6App
         public int Id { get; set; }
         public int Value { get; set; }
 
-        public virtual ICollection<Cart> Carts { get; set; }
+        public ICollection<Cart> Carts { get; set; }
     }
 }
