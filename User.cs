@@ -13,9 +13,8 @@ namespace ShopInfoEF6App
         public int Age { get; set; }
         public string Email { get; set; }
         
-
-        public virtual Cart Cart { get; set; }
-        public virtual ICollection<UserAddress> UserAddresses { get; set; }
+        public Cart Cart { get; set; }
+        public ICollection<UserAddress> UserAddresses { get; set; }
 
         
     }
