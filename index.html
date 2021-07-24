@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="main.css">
+  <title>Table and input</title>
+ </head>
+ <body>
+    <table>
+        <caption style="background-color: black; color: white;">Information</caption>
+
+         <th>Details</th><th>1st</th><th>2nd</th><th>3rd</th>
+
+        <tr>
+         <td>Name</td><td>Denys</td><td>Ihor</td><td>Vladyslav</td>
+        </tr>
+
+        <tr>
+         <td>Age</td><td>28</td><td>34</td><td>48</td>
+        </tr>
+
+        <tr class="third">
+         <td>Job</td><td>J.Developer</td><td>S.Developer</td><td>Unemployed</td>
+        </tr>
+
+        <tr>
+         <td>City</td><td>LA</td><td>KH</td><td>MOS</td>
+        </tr>
+
+       </table>
+
+    <form method ="POST" action="http://localhost:1433">
+       <div class="container">
+        <h1>Register</h1>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            </div>
+
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+
+            <div>
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            </div>
+
+            <div>
+                <button type="submit" class="registerbtn">Register</button>
+            </div>
+      </div>
+    </form>
+ </body>
+</html>
