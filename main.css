@@ -1,0 +1,24 @@
+table {
+    width: 400px;
+    background:yellow;
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+
+td {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+th:nth-child(1n) {
+    background: green;
+    color: white;
+}
+
+tr:nth-child(2n-1) {
+    background: #2172db;
+} 
+
+tr:nth-child(4) {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
