@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.employee {
+  display: inline-block;
+  border: 1px solid gray;
+  color: gray;
+  padding: 0.25em 0.5em;
+}
+
+.boss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__main {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    * {
+      padding: 0.25em;
+      border: 1px solid black;
+    }
+    &__name {
+      flex-grow: 1;
+      margin-right: 0.5em;
+    }
+    &__control-button {
+      border-radius: 0.25em;
+      text-decoration: none;
+      color: black;
+      border: 1px gray outset;
+      &:active {
+        border-style: inset;
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  &__employees {
+    margin-top: 0.25em;
+    &__list {
+      margin:0;
+      padding:0;
+      list-style: none;
+      &__employee {
+        display: inline-block;
+        border: 1px solid gray;
+        color: gray;
+        padding: 0.25em;
+        &:not(:last-child) {
+          margin-right: 0.25em;
+        }
+        &__name {
+          color: black;
+        }
+        &__fire {
+          display: inline-block;
+          vertical-align: middle;
+          height: 1em;
+          margin-left: 0.25em;
+          padding-right: 0.625em;
+          position: relative;
+          cursor: pointer;
+          @mixin fire-pseudo-cross-settings($second: 0) {
+            display: block;
+            position: absolute;
+            top: 33%;
+            left: 0;
+            content: "";
+            width: 0.75em;
+            height: 0.125em;
+            background-color: darkred;
+            @if $second == 1 {
+              transform: rotate(-45deg);
+            }
+            @else {
+              transform: rotate(45deg);
+            }
+          }
+          &::before{
+            @include fire-pseudo-cross-settings();
+          }
+          &::after{
+            @include fire-pseudo-cross-settings(1);
+          }
+        }
+      }
+    }
+  }
+}
