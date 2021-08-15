@@ -1,0 +1,43 @@
+body {
+  background-color: mediumpurple;
+}
+
+.App {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+div {
+  background-color: mediumpurple;
+  margin: 8px;
+}
+#root {
+  margin: 0px;
+}
+.scissors {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/cut--v2.png");
+  background-color: white;
+  margin-top: 4px;
+  margin-left: 16px;
+  border-color: blue;
+  width: 32px;
+  height: 32px;
+}
+.stone {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/rock.png");
+  background-color: white;
+  margin-top: 4px;
+  margin-left: 16px;
+  border-color: blue;
+  width: 32px;
+  height: 32px;
+}
+.paper {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/toilet-paper.png");
+  background-color: white;
+  margin-top: 4px;
+  margin-left: 16px;
+  border-color: blue;
+  width: 32px;
+  height: 32px;
+}
