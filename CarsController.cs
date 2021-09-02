@@ -22,9 +22,9 @@ namespace JwtAuthSampleAPI.Controllers
 
         [HttpGet]
         [Route("")]
-        public IQueryable<Car> GetAllCars()
+        public IEnumerable<Car> GetAllCars()
         {
-            return cars;
+            return CarsController.cars;
         }
     }
 }
