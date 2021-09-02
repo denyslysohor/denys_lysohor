@@ -14,9 +14,5 @@
         public Player SecondPlayer { get; set; }
 
         public GameStatus Status { get; set; }
-
-        public bool IsFinished { get; set; }
-
-        public bool IsFull { get; set; }
     }
 }
