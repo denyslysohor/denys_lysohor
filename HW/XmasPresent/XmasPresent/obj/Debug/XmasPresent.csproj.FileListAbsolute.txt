@@ -1,0 +1,13 @@
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/bin/Debug/XmasPresent.exe
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/bin/Debug/XmasPresent.pdb
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/obj/Debug/XmasPresent.csprojAssemblyReference.cache
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/obj/Debug/XmasPresent.csproj.CoreCompileInputs.cache
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/obj/Debug/XmasPresent.exe
+/Users/denyslysohor/Projects/XmasPresent/XmasPresent/obj/Debug/XmasPresent.pdb
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\bin\Debug\XmasPresent.exe.config
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\bin\Debug\XmasPresent.exe
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\bin\Debug\XmasPresent.pdb
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\obj\Debug\XmasPresent.csprojAssemblyReference.cache
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\obj\Debug\XmasPresent.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\obj\Debug\XmasPresent.exe
+C:\Users\Dom\Desktop\XmasPresent copy\XmasPresent\obj\Debug\XmasPresent.pdb

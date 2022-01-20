@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{60C15E61-78DD-4A97-8907-D3637D6F2FE5}|Default">
+  <MonoDevelop.Ide.ItemProperties.XmasPresent PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XmasPresent/Program.cs">
+    <Files>
+      <File FileName="XmasPresent/Program.cs" Line="6" Column="6" />
+      <File FileName="XmasPresent/Candy.cs" Line="1" Column="1" />
+      <File FileName="XmasPresent/Lollipop.cs" Line="1" Column="1" />
+      <File FileName="XmasPresent/ChocoCandy.cs" Line="9" Column="12" />
+      <File FileName="XmasPresent/ChocoNutCandy.cs" Line="1" Column="1" />
+      <File FileName="XmasPresent/DoubleNutChocoCandy.cs" Line="1" Column="1" />
+      <File FileName="XmasPresent/FizzyCandy.cs" />
+      <File FileName="XmasPresent/JelFizCandy.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XmasPresent" expanded="True">
+            <Node name="XmasPresent" expanded="True">
+              <Node name="app.config" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
